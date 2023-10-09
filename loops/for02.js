@@ -8,7 +8,7 @@ To solve this task, complete the loop expressions inside the brackets.
 const mixed = [10, 4, 'c', 6, 'a', 4]
 const newArray = []
 
-/*change this line*/ for (i = 0; i = mixed.length; i++) { //
+/*change this line*/ for (let i = 0; i = mixed.length; i++) { // indicate i to have the value 0, 
     const current = mixed[i];
     if (typeof current === 'number'){
         newArray.push(current)
