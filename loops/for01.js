@@ -6,7 +6,7 @@
  */
 
  let result = 0; 
- /* change this line */ for (let i = 1; i < 4; i = i + 1 ){ // another solution is <= 3 in the middle 
+ /* change this line */ for (let i = 1; i < 4; i = i + 1 ){ // solution is <= 3 in the middle or < 3
     console.log(i)
     result = result + i 
  }
