@@ -1,0 +1,30 @@
+Asynchronous programming allows you to move a specific task to the background. 
+While you wait for this task to finish, the main program continues to run.
+
+JavaScript = single threaded language
+
+A thread is like a virtual machine that is able to execute code independently of other threads within the same process.
+
+Think of a single-lane road. Only one car can travel on it at a time.
+That's not a problem as long as all cars keep moving at the same speed.
+But if one car stops the entire road is blocked until that car can start moving again. 
+
+Similarly, the execution of Javascript could be blocked by a slow or time consuming piece of code.
+Since JavaScript hasonly only thread, it can execute only one piece of code at a time
+
+This way of executing code in order from start to finish is called synchronous programming.
+
+-----
+
+setTimeout() method is a built-in function (내장함수) 
+in javaScript that allows you to execute a function after a specified amount of time has passed.
+
+The method requires 2 arguments:
+ The first argument is the function that you want to execute after the delay. aka function name
+ The second argument is the delay time in milliseconds. ex) 3 seconds => 3000
+
+What makes this method asynchronous is that during the delay time, execution of other tasks is not blocked. 
+That's why code lines that come after the setTimeout() method are executed before the delay is completed.
+
+One final note about setTimeout(): You can call setTimeout() without a delay argument or with a delay of 0. 
+However, the function that you pass to setTimeout() will still be moved to the end of the so-called execution queue.
