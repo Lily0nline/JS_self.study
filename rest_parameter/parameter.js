@@ -17,7 +17,7 @@ hello(3, 4) // 3,4 is an argument
 */
 
 
-function func(...args) { //function with an array args as it's argument 
+function func(...args) { //function with an array args as a parameter
     console.log(args); // print args
   }
   func(1, 2); //[1, 2]
