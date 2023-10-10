@@ -1,0 +1,40 @@
+function expressions use the function keyword and a block syntax to declare a function:
+
+        // function expression
+
+        const logMessage = function() {
+        return 'How are you?';
+        }
+        console.log(logMessage()); //How are you?
+
+Arrow functions sometimes allow you to remove much of this syntax.
+
+//changing the function above into an arrow function
+
+        // arrow function
+
+        logMessage = () => {
+        return 'How are you?';
+        }
+        console.log(logMessage());
+ 
+All of the following are valid arrow functions that do exactly the same thing:
+    1.)
+        const funcName = (num) => {
+        const multiplier = 5;
+        return num * multiplier;
+        }
+
+    2.) 
+        const funcName = (num) => {
+        return num * 5;
+        }
+
+    3.) 
+        const funcName = (num) => num * 5;
+
+    4.) 
+        const funcName = num => num * 5; 
+
+        not using () around the parameters is only acceptable when there is only 1 parameter.
+        if it's mulitple, or an empty parameter () should be added.
