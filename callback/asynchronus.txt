@@ -14,6 +14,18 @@ Since JavaScript hasonly only thread, it can execute only one piece of code at a
 
 This way of executing code in order from start to finish is called synchronous programming.
 
+synchronous programming comes with certain disadvantages.
+
+In JavaScript we often have tasks that take some time to complete. 
+For example, sometimes we have to make a request to a backend API to get data.
+
+In this case, the request must first arrive at the backend server. 
+Then the server has to collect the requested dataand send it back.
+From a programming pov this is a lot of time.
+
+If we were to use synchronous programming for this request, our programme 
+would have to wait until the request was completed before it could execute any other code.
+In other words, out program would freeze in the meantime. 
 -----
 
 setTimeout() method is a built-in function (내장함수) 
