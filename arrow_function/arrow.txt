@@ -20,21 +20,21 @@ Arrow functions sometimes allow you to remove much of this syntax.
  
 All of the following are valid arrow functions that do exactly the same thing:
     1.)
-        const funcName = (num) => {
+         (num) => {
         const multiplier = 5;
         return num * multiplier;
         }
 
     2.) 
-        const funcName = (num) => {
+         (num) => {
         return num * 5;
         }
 
     3.) 
-        const funcName = (num) => num * 5;
+         (num) => num * 5;
 
     4.) 
-        const funcName = num => num * 5; 
+         num => num * 5; 
 
         not using () around the parameters is only acceptable when there is only 1 parameter.
         if it's mulitple, or an empty parameter () should be added.
