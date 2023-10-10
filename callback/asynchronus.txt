@@ -40,3 +40,13 @@ That's why code lines that come after the setTimeout() method are executed befor
 
 One final note about setTimeout(): You can call setTimeout() without a delay argument or with a delay of 0. 
 However, the function that you pass to setTimeout() will still be moved to the end of the so-called execution queue.
+
+        ex) 
+        let i = 0; //declare the value of the var i 
+        function func() { 
+        i = 2; //declare new value for i
+        console.log(i); // print i new value 
+        }
+        setTimeout(func, 0); //call func but move it to the end of the queue
+        console.log(i); // print i 
+        // expected output 0, 2
