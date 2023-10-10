@@ -13,5 +13,5 @@ function outer() {
     console.log(y+z)
 }
 
-console.log(y) // 3
-outer(); // 5, 12
+console.log(y) // 3 | printed the global variable of y first
+outer(); // 5, 9 | called function outer which calls function inner first then prints function outer
