@@ -92,3 +92,8 @@ const hello = {a : 123, b : 'okay', c: ['d', 'e', 'f']}
 9. 
 
 filter filters out the items you dont want and creates a new array of items you wanted
+sort sorts out a list of items in an array into order
+findIndex returns index of the first array element that satisfies the the provided test function; else it returns -1
+find is like filter except it only returns a single element and when nothing is foudn
+it returns 'undefined' 
+reduce allows you to reduce down an array into a singular value which is typically not an array but instead things like a number or a string
